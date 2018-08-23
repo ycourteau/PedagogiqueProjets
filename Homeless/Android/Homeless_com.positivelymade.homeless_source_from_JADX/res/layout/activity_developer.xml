@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" ads:orientation="vertical" ads:background="@color/white" ads:padding="0dp" ads:layout_width="match_parent" ads:layout_height="match_parent">
+    <ScrollView ads:background="@color/white" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x1" ads:layout_weight="1.0">
+        <LinearLayout ads:orientation="vertical" ads:background="@color/white" ads:paddingLeft="15dp" ads:paddingRight="15dp" ads:scrollbars="UNKNOWN_DATA_0x0" ads:layout_width="match_parent" ads:layout_height="wrap_content">
+            <ImageView ads:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" ads:id="@id/imageviewL" ads:paddingTop="15dp" ads:paddingBottom="15dp" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:src="@drawable/positivelymade" ads:onClick="pmW" ads:contentDescription="@string/desc_logo_about" />
+            <TextView ads:textSize="19sp" ads:textStyle="bold" ads:textColor="#333333" ads:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" ads:id="@id/textviewT" ads:clickable="true" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x2801" ads:text="@string/title_logo_about" ads:onClick="pmW" />
+            <TextView ads:textSize="16sp" ads:textColor="#333333" ads:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" ads:id="@id/textviewC" ads:paddingBottom="10dp" ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:text="@string/text_logo_about" ads:lineSpacingExtra="10sp" />
+            <TextView ads:textSize="16sp" ads:textColor="#58a7fd" ads:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" ads:id="@id/textviewW" ads:paddingBottom="17dp" ads:clickable="true" ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:text="@string/link_logo_about" ads:onClick="pmW" />
+            <TextView ads:textSize="16sp" ads:textColor="#44b449" ads:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" ads:id="@id/textviewE" ads:paddingBottom="17dp" ads:clickable="true" ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:text="@string/email_logo_about" ads:onClick="pmE" />
+            <TextView ads:textSize="16sp" ads:textColor="@color/orange" ads:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" ads:id="@id/textviewD" ads:clickable="true" ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:text="@string/pm_donate" ads:onClick="pmD" />
+        </LinearLayout>
+    </ScrollView>
+    <View ads:background="@color/greyb" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x100" />
+    <LinearLayout ads:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" ads:orientation="vertical" ads:id="@id/profile_ad" ads:background="@color/greye" ads:layout_width="match_parent" ads:layout_height="wrap_content">
+        <Button ads:textSize="22sp" ads:textColor="@color/greye" ads:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" ads:id="@id/back" ads:background="@drawable/back_button" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x3201" ads:text="@string/back" ads:onClick="goBack" ads:contentDescription="@string/back" />
+        <com.google.android.gms.ads.AdView ads:id="@id/adView" ads:visibility="visible" ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:adSize="SMART_BANNER" ads:adUnitId="@string/banner_ad_unit_id" />
+    </LinearLayout>
+</LinearLayout>

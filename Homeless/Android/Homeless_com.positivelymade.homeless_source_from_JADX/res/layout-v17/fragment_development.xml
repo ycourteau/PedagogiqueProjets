@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+    <LinearLayout android:orientation="vertical" android:id="@id/profile_top" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+        <LinearLayout android:orientation="vertical" android:id="@id/profile_info" android:background="@color/transparent" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+            <LinearLayout android:orientation="horizontal" android:background="@color/greye" android:padding="5dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false"
+                <LinearLayout android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:background="@color/transparent" android:paddingLeft="0dp" android:paddingTop="5dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="0dp" android:paddingEnd="5dp">
+                    <TextView android:textSize="20sp" android:textColor="@color/orange" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/profile_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pname" android:singleLine="true" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/google" android:background="@color/transparent" android:paddingTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/google_image" android:background="@drawable/google_plus_inactive" android:layout_width="UNKNOWN_DATA_0x2001" android:layout_height="UNKNOWN_DATA_0x2001" android:contentDescription="@string/google" />
+                        <TextView android:textSize="16sp" android:textColor="@color/grey8" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/google_text" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/google_signin" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:background="@color/transparent" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/profile_image" android:layout_width="UNKNOWN_DATA_0x4001" android:layout_height="UNKNOWN_DATA_0x4001" android:contentDescription="@string/pimage" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/greyb" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/profile_bottom" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ListView android:id="@id/list" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+    <View android:background="#efefef" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" />
+</LinearLayout>

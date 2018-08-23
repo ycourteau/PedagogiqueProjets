@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="tshirt_array">
+        <item>SM  @   US$33</item>
+        <item>M    @   US$33</item>
+        <item>L     @   US$33</item>
+        <item>XL   @   US$33</item>
+        <item>XXL @   US$33</item>
+    </array>
+    <array name="unlock_array">
+        <item>$1000     @ US$1.99</item>
+        <item>$10000   @ US$2.99</item>
+        <item>$100000 @ US$3.99</item>
+        <item>Car             @ US$1.99</item>
+        <item>University @ US$2.99</item>
+    </array>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res-auto" ads:id="0x1020012" ads:layout_width="match_parent" ads:layout_height="match_parent">
+    <LinearLayout ads:orientation="vertical" ads:id="@id/layout" ads:layout_width="match_parent" ads:layout_height="match_parent">
+        <FrameLayout ads:id="0x1020011" ads:background="0x106000d" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x101" />
+        <android.support.v4.view.ViewPager ads:id="@id/viewPager" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x1" ads:layout_weight="1.0" />
+        <TabWidget ads:id="0x1020013" ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:showDividers="UNKNOWN_DATA_0x0" />
+        <com.google.android.gms.ads.AdView ads:gravity="top|bottom|center_vertical|fill_vertical|center|fill" ads:id="@id/adView" ads:visibility="visible" ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:adSize="SMART_BANNER" ads:adUnitId="@string/banner_ad_unit_id" />
+    </LinearLayout>
+</TabHost>

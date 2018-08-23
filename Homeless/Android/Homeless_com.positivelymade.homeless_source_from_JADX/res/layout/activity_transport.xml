@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" ads:orientation="vertical" ads:background="@color/white" ads:padding="0dp" ads:layout_width="match_parent" ads:layout_height="match_parent"
+    <LinearLayout ads:orientation="vertical" ads:id="@id/profile_app" ads:background="@color/greye" ads:padding="0dp" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x1" ads:layout_weight="1.0"
+        <LinearLayout ads:orientation="vertical" ads:id="@id/profile_top" ads:background="@color/white" ads:paddingTop="5dp" ads:paddingBottom="5dp" ads:layout_width="match_parent" ads:layout_height="wrap_content"
+            <LinearLayout ads:orientation="horizontal" ads:id="@id/profile_money" ads:background="@color/white" ads:paddingLeft="10dp" ads:paddingTop="10dp" ads:paddingRight="10dp" ads:paddingBottom="8dp" ads:layout_width="match_parent" ads:layout_height="wrap_content">
+                <ImageView ads:background="@drawable/cash" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:contentDescription="@string/hunger_cash" />
+                <TextView ads:textSize="16sp" ads:textColor="@color/grey3" ads:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" ads:id="@id/cash_title" ads:paddingLeft="11dp" ads:paddingRight="5dp" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:text="@string/hunger_cash" />
+                <TextView ads:textSize="17sp" ads:textColor="@color/grey3" ads:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" ads:id="@id/cash_amount" ads:paddingLeft="5dp" ads:paddingRight="5dp" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:text="@string/hunger_cash_amount" />
+            </LinearLayout>
+            <LinearLayout ads:orientation="horizontal" ads:id="@id/profile_bank" ads:background="@color/white" ads:paddingLeft="10dp" ads:paddingTop="8dp" ads:paddingRight="10dp" ads:paddingBottom="10dp" ads:layout_width="match_parent" ads:layout_height="wrap_content">
+                <ImageView ads:background="@drawable/bank" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:contentDescription="@string/hunger_bank" />
+                <TextView ads:textSize="16sp" ads:textColor="@color/grey3" ads:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" ads:id="@id/bank_title" ads:paddingLeft="11dp" ads:paddingRight="5dp" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:text="@string/hunger_bank" />
+                <TextView ads:textSize="17sp" ads:textColor="@color/grey3" ads:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" ads:id="@id/bank_amount" ads:paddingLeft="5dp" ads:paddingRight="5dp" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:text="@string/hunger_bank_amount" />
+            </LinearLayout>
+        </LinearLayout>
+        <View ads:background="@color/greyb" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x100" />
+        <ListView ads:id="@id/transport_list" ads:background="@color/greye" ads:layout_width="match_parent" ads:layout_height="wrap_content" />
+    </LinearLayout>
+    <View ads:background="@color/greya" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x100" />
+    <LinearLayout ads:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" ads:orientation="vertical" ads:id="@id/profile_ad" ads:background="@color/greye" ads:layout_width="match_parent" ads:layout_height="wrap_content">
+        <Button ads:textSize="22sp" ads:textColor="@color/greye" ads:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" ads:id="@id/back" ads:background="@drawable/back_button" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x3201" ads:text="@string/back" ads:onClick="goBack" ads:contentDescription="@string/back" />
+        <com.google.android.gms.ads.AdView ads:id="@id/adView" ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:adSize="SMART_BANNER" ads:adUnitId="@string/banner_ad_unit_id" />
+    </LinearLayout>
+</LinearLayout>

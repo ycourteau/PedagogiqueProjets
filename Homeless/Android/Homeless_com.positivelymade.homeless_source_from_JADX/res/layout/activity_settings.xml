@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" ads:orientation="vertical" ads:background="@color/white" ads:padding="0dp" ads:layout_width="match_parent" ads:layout_height="match_parent">
+    <TextView ads:textSize="22sp" ads:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" ads:id="@id/app_settings_title" ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:layout_margin="15dp" ads:text="@string/settings" />
+    <View ads:background="@color/greyb" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x100" />
+    <ScrollView ads:orientation="vertical" ads:id="@id/profile_app" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x1" ads:layout_weight="1.0">
+        <LinearLayout ads:orientation="vertical" ads:id="@id/profile_bottom" ads:background="@color/white" ads:layout_width="match_parent" ads:layout_height="wrap_content"
+            <LinearLayout ads:orientation="horizontal" ads:id="@id/options_share_rate" ads:background="@color/white" ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:baselineAligned="false"
+                <LinearLayout ads:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" ads:orientation="vertical" ads:id="@id/options_share" ads:background="@color/white" ads:paddingTop="15dp" ads:paddingBottom="15dp" ads:clickable="true" ads:layout_width="UNKNOWN_DATA_0x1" ads:layout_height="wrap_content" ads:layout_weight="1.0">
+                    <ImageView ads:id="@id/imageShare" ads:clickable="true" ads:layout_width="UNKNOWN_DATA_0x3001" ads:layout_height="UNKNOWN_DATA_0x3001" ads:src="@drawable/share" ads:contentDescription="@string/share" />
+                    <TextView ads:textSize="16sp" ads:id="@id/textShare" ads:paddingTop="10dp" ads:clickable="true" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:text="@string/share" />
+                </LinearLayout>
+                <LinearLayout ads:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" ads:orientation="vertical" ads:id="@id/options_rate" ads:background="@color/white" ads:paddingTop="15dp" ads:paddingBottom="15dp" ads:clickable="true" ads:layout_width="UNKNOWN_DATA_0x1" ads:layout_height="wrap_content" ads:layout_weight="1.0">
+                    <ImageView ads:id="@id/imageRate" ads:clickable="true" ads:layout_width="UNKNOWN_DATA_0x3001" ads:layout_height="UNKNOWN_DATA_0x3001" ads:src="@drawable/rate" ads:contentDescription="@string/rate" />
+                    <TextView ads:textSize="16sp" ads:id="@id/textRate" ads:paddingTop="10dp" ads:clickable="true" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:text="@string/rate" />
+                </LinearLayout>
+            </LinearLayout>
+            <View ads:background="#efefef" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x100" />
+            <LinearLayout ads:orientation="horizontal" ads:id="@id/options_save_load" ads:background="@color/white" ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:baselineAligned="false"
+                <LinearLayout ads:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" ads:orientation="vertical" ads:id="@id/options_save" ads:background="@color/white" ads:paddingTop="15dp" ads:paddingBottom="15dp" ads:clickable="true" ads:layout_width="UNKNOWN_DATA_0x1" ads:layout_height="wrap_content" ads:layout_weight="1.0">
+                    <ImageView ads:id="@id/imageSave" ads:clickable="true" ads:layout_width="UNKNOWN_DATA_0x3001" ads:layout_height="UNKNOWN_DATA_0x3001" ads:src="@drawable/save" ads:contentDescription="@string/save" />
+                    <TextView ads:textSize="16sp" ads:id="@id/textSave" ads:paddingTop="10dp" ads:clickable="true" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:text="@string/save" />
+                </LinearLayout>
+                <LinearLayout ads:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" ads:orientation="vertical" ads:id="@id/options_load" ads:background="@color/white" ads:paddingTop="15dp" ads:paddingBottom="15dp" ads:clickable="true" ads:layout_width="UNKNOWN_DATA_0x1" ads:layout_height="wrap_content" ads:layout_weight="1.0">
+                    <ImageView ads:id="@id/imageLoad" ads:clickable="true" ads:layout_width="UNKNOWN_DATA_0x3001" ads:layout_height="UNKNOWN_DATA_0x3001" ads:src="@drawable/load" ads:contentDescription="@string/load" />
+                    <TextView ads:textSize="16sp" ads:id="@id/textLoad" ads:paddingTop="10dp" ads:clickable="true" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:text="@string/load" />
+                </LinearLayout>
+            </LinearLayout>
+            <View ads:background="#efefef" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x100" />
+            <LinearLayout ads:orientation="horizontal" ads:id="@id/options_unlock_tshirt" ads:background="@color/white" ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:baselineAligned="false"
+                <LinearLayout ads:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" ads:orientation="vertical" ads:id="@id/options_unlock" ads:background="@color/white" ads:paddingTop="15dp" ads:paddingBottom="15dp" ads:clickable="true" ads:layout_width="UNKNOWN_DATA_0x1" ads:layout_height="wrap_content" ads:layout_weight="1.0">
+                    <ImageView ads:id="@id/imageUnlock" ads:clickable="true" ads:layout_width="UNKNOWN_DATA_0x3001" ads:layout_height="UNKNOWN_DATA_0x3001" ads:src="@drawable/unlock" ads:contentDescription="@string/unlock" />
+                    <TextView ads:textSize="16sp" ads:id="@id/textUnlock" ads:paddingTop="10dp" ads:clickable="true" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:text="@string/unlock" />
+                </LinearLayout>
+                <LinearLayout ads:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" ads:orientation="vertical" ads:id="@id/options_tshirt" ads:background="@color/white" ads:paddingTop="15dp" ads:paddingBottom="15dp" ads:visibility="gone" ads:clickable="true" ads:layout_width="UNKNOWN_DATA_0x1" ads:layout_height="wrap_content" ads:layout_weight="1.0">
+                    <ImageView ads:id="@id/imageTshirt" ads:clickable="true" ads:layout_width="UNKNOWN_DATA_0x3001" ads:layout_height="UNKNOWN_DATA_0x3001" ads:src="@drawable/tshirt" ads:contentDescription="@string/tshirt" />
+                    <TextView ads:textSize="16sp" ads:id="@id/textTshirt" ads:paddingTop="10dp" ads:clickable="true" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:text="@string/tshirt" />
+                </LinearLayout>
+            </LinearLayout>
+            <View ads:background="#efefef" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x100" />
+            <LinearLayout ads:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" ads:orientation="vertical" ads:id="@id/options_developer" ads:background="@color/white" ads:paddingTop="15dp" ads:paddingBottom="15dp" ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:baselineAligned="false">
+                <ImageView ads:id="@id/imageDeveloper" ads:clickable="true" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:src="@drawable/positivelymade" ads:contentDescription="@string/tshirt" />
+                <TextView ads:textSize="16sp" ads:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" ads:id="@id/textDeveloper" ads:paddingTop="10dp" ads:clickable="true" ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:text="@string/developer" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <View ads:background="@color/greyb" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x100" />
+    <LinearLayout ads:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" ads:orientation="vertical" ads:id="@id/profile_ad" ads:background="@color/greye" ads:layout_width="match_parent" ads:layout_height="wrap_content">
+        <Button ads:textSize="22sp" ads:textColor="@color/greye" ads:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" ads:id="@id/back" ads:background="@drawable/back_button" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x3201" ads:text="@string/back" ads:onClick="goBack" ads:contentDescription="@string/back" />
+        <com.google.android.gms.ads.AdView ads:id="@id/adView" ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:adSize="SMART_BANNER" ads:adUnitId="@string/banner_ad_unit_id" />
+    </LinearLayout>
+</LinearLayout>

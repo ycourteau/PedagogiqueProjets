@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <raw name="click">res/raw/click.ogg</raw>
+    <raw name="dead">res/raw/dead.ogg</raw>
+    <raw name="gtm_analytics">res/raw/gtm_analytics</raw>
+    <raw name="register">res/raw/register.ogg</raw>
+</resources>

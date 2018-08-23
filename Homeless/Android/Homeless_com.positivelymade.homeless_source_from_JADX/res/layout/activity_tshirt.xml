@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" ads:orientation="vertical" ads:background="@color/white" ads:padding="0dp" ads:layout_width="match_parent" ads:layout_height="match_parent">
+    <TextView ads:textSize="22sp" ads:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" ads:id="@id/app_tshirt_title" ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:layout_margin="15dp" ads:text="@string/tshirt_title" />
+    <View ads:background="@color/greyb" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x100" />
+    <ScrollView ads:orientation="vertical" ads:id="@id/profile_app" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x1" ads:layout_weight="1.0">
+        <LinearLayout ads:orientation="vertical" ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:layout_marginTop="15dp"
+            <LinearLayout ads:orientation="vertical" ads:id="@id/app_tshirt" ads:layout_width="match_parent" ads:layout_height="wrap_content">
+                <ImageView ads:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" ads:id="@id/tshirt_image" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:src="@drawable/tshirt_image" ads:contentDescription="@string/tshirt_text" />
+                <View ads:background="@color/greye" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x100" ads:layout_marginTop="15dp" />
+                <LinearLayout ads:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" ads:orientation="horizontal" ads:id="@id/tshirt_title" ads:paddingLeft="15dp" ads:paddingTop="10dp" ads:paddingRight="15dp" ads:paddingBottom="5dp" ads:layout_width="match_parent" ads:layout_height="wrap_content">
+                    <ImageView ads:padding="5dp" ads:layout_width="UNKNOWN_DATA_0x2801" ads:layout_height="UNKNOWN_DATA_0x2801" ads:src="@drawable/tshirt" ads:contentDescription="@string/tshirt_text" />
+                    <TextView ads:textSize="18sp" ads:id="@id/tshirt_title_text" ads:padding="5dp" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:text="@string/tshirt_text" />
+                </LinearLayout>
+                <LinearLayout ads:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" ads:orientation="horizontal" ads:id="@id/tshirt_option" ads:background="@color/greye" ads:padding="10dp" ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:layout_marginLeft="20dp" ads:layout_marginRight="20dp">
+                    <Spinner ads:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" ads:entries="@array/tshirt_array" ads:id="@id/tshirt_spinner" ads:layout_width="UNKNOWN_DATA_0x0" ads:layout_height="UNKNOWN_DATA_0x2e01" ads:layout_marginRight="10dp" ads:layout_weight="1.0" />
+                    <Button ads:textColor="@color/white" ads:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" ads:id="@id/tshirt_button" ads:background="@drawable/bank_button" ads:layout_width="UNKNOWN_DATA_0x5f01" ads:layout_height="UNKNOWN_DATA_0x2801" ads:text="@string/tshirt_button" />
+                </LinearLayout>
+            </LinearLayout>
+            <View ads:background="@color/greye" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x0" ads:layout_marginTop="15dp" />
+        </LinearLayout>
+    </ScrollView>
+    <View ads:background="@color/greyb" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x100" />
+    <LinearLayout ads:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" ads:orientation="vertical" ads:id="@id/profile_ad" ads:background="@color/greye" ads:layout_width="match_parent" ads:layout_height="wrap_content">
+        <Button ads:textSize="22sp" ads:textColor="@color/greye" ads:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" ads:id="@id/back" ads:background="@drawable/back_button" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x3201" ads:text="@string/back" ads:onClick="goBack" ads:contentDescription="@string/back" />
+        <com.google.android.gms.ads.AdView ads:id="@id/adView" ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:adSize="SMART_BANNER" ads:adUnitId="@string/banner_ad_unit_id" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" ads:orientation="vertical" ads:background="@color/white" ads:padding="0dp" ads:layout_width="match_parent" ads:layout_height="match_parent"
+    <LinearLayout ads:orientation="vertical" ads:id="@id/profile_app" ads:padding="0dp" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x1" ads:layout_weight="1.0"
+        <LinearLayout ads:orientation="vertical" ads:id="@id/profile_top" ads:background="@color/white" ads:paddingTop="5dp" ads:paddingBottom="5dp" ads:layout_width="match_parent" ads:layout_height="wrap_content"
+            <LinearLayout ads:orientation="horizontal" ads:id="@id/profile_bank" ads:background="@color/white" ads:paddingLeft="10dp" ads:paddingTop="8dp" ads:paddingRight="10dp" ads:paddingBottom="10dp" ads:layout_width="match_parent" ads:layout_height="wrap_content">
+                <ImageView ads:background="@drawable/bank" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:contentDescription="@string/hunger_bank" />
+                <TextView ads:textSize="16sp" ads:textColor="@color/grey3" ads:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" ads:id="@id/hunger_bank_title" ads:paddingLeft="11dp" ads:paddingRight="5dp" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:text="@string/hunger_bank" />
+                <TextView ads:textSize="17sp" ads:textColor="@color/grey3" ads:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" ads:id="@id/hunger_bank_amount" ads:paddingLeft="5dp" ads:paddingRight="5dp" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:text="@string/hunger_bank_amount" />
+            </LinearLayout>
+            <LinearLayout ads:orientation="horizontal" ads:id="@id/profile_money" ads:background="@color/white" ads:paddingLeft="10dp" ads:paddingTop="10dp" ads:paddingRight="10dp" ads:paddingBottom="8dp" ads:layout_width="match_parent" ads:layout_height="wrap_content">
+                <ImageView ads:background="@drawable/cash" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:contentDescription="@string/hunger_cash" />
+                <TextView ads:textSize="16sp" ads:textColor="@color/grey3" ads:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" ads:id="@id/hunger_cash_title" ads:paddingLeft="11dp" ads:paddingRight="5dp" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:text="@string/hunger_cash" />
+                <TextView ads:textSize="17sp" ads:textColor="@color/grey3" ads:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" ads:id="@id/hunger_cash_amount" ads:paddingLeft="5dp" ads:paddingRight="5dp" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:text="@string/hunger_cash_amount" />
+            </LinearLayout>
+        </LinearLayout>
+        <View ads:id="@id/bank_d" ads:background="@color/greyb" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x100" ads:layout_marginTop="0dp" />
+        <LinearLayout ads:orientation="vertical" ads:id="@id/bank_info_b" ads:background="@color/greye" ads:paddingTop="5dp" ads:paddingBottom="5dp" ads:layout_width="match_parent" ads:layout_height="wrap_content">
+            <TextView ads:textSize="13sp" ads:textColor="@color/grey5" ads:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" ads:id="@id/bank_info" ads:padding="8dp" ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:text="@string/bank_info" />
+        </LinearLayout>
+        <View ads:background="@color/greyb" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x100" ads:layout_marginBottom="20dp" />
+        <RelativeLayout ads:orientation="vertical" ads:id="@id/profile_bottom2" ads:background="@color/white" ads:paddingTop="5dp" ads:paddingBottom="5dp" ads:layout_width="match_parent" ads:layout_height="wrap_content">
+            <EditText ads:textSize="20sp" ads:textColor="@color/grey1" ads:id="@id/bank_edittext" ads:background="@drawable/bank_edit" ads:padding="10dp" ads:paddingTop="15dp" ads:layout_width="UNKNOWN_DATA_0xfa01" ads:layout_height="UNKNOWN_DATA_0x3201" ads:layout_marginBottom="15dp" ads:layout_centerHorizontal="true" ads:inputType="number|numberSigned|numberDecimal|numberPassword|phone" />
+            <LinearLayout ads:orientation="horizontal" ads:padding="0dp" ads:layout_width="UNKNOWN_DATA_0xfa01" ads:layout_height="wrap_content" ads:layout_margin="0dp" ads:layout_below="@id/bank_edittext" ads:layout_centerHorizontal="true">
+                <Button ads:textColor="@color/white" ads:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" ads:id="@id/bank_withdraw" ads:background="@drawable/bank_button" ads:layout_width="UNKNOWN_DATA_0x6e01" ads:layout_height="UNKNOWN_DATA_0x2801" ads:text="@string/bank_withdrawal" ads:onClick="bankWithdraw" />
+                <View ads:background="@color/transparent" ads:layout_width="UNKNOWN_DATA_0x1e01" ads:layout_height="wrap_content" />
+                <Button ads:textColor="@color/white" ads:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" ads:id="@id/bank_deposit" ads:background="@drawable/bank_button" ads:layout_width="UNKNOWN_DATA_0x6e01" ads:layout_height="UNKNOWN_DATA_0x2801" ads:text="@string/bank_deposit" ads:onClick="bankDeposit" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View ads:background="#efefef" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x100" />
+    <LinearLayout ads:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" ads:orientation="vertical" ads:id="@id/profile_ad" ads:background="@color/greye" ads:layout_width="match_parent" ads:layout_height="wrap_content">
+        <Button ads:textSize="22sp" ads:textColor="@color/greye" ads:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" ads:id="@id/back" ads:background="@drawable/back_button" ads:layout_width="match_parent" ads:layout_height="UNKNOWN_DATA_0x3201" ads:text="@string/back" ads:onClick="goBack" ads:contentDescription="@string/back" />
+        <com.google.android.gms.ads.AdView ads:id="@id/adView" ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:adSize="SMART_BANNER" ads:adUnitId="@string/banner_ad_unit_id" />
+    </LinearLayout>
+</LinearLayout>
