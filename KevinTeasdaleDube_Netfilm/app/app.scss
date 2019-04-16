@@ -1,0 +1,51 @@
+// Global SCSS styling
+// @see https://docs.nativescript.org/ui/styling
+
+ActionBar {
+  background-color: #e05b33;
+  color: #ffffff;
+
+}
+TextField{
+  color: #ffffff;
+  placeholder-color: #ffffff;
+}
+/* Tous les boutons ont la même base */
+.button{
+  background-color: #40798c;
+  color: #000000;
+  margin-bottom: 15vw;
+  margin-top: 15vw;
+}
+/* tous les Label des ListView */
+.listViewLabel{
+  padding: 15vw;
+  font-size: 15vw;
+  height: 50vw;
+  vertical-align: center;
+  text-align: center;
+
+}
+/* Tous les Label de haut de page */
+.header{
+  font-size: 17vw;
+  padding: 15vw;
+  text-align: center;
+}
+/* Label dans l'ActionBar */
+.actionbarTitle{
+  font-size: 20vw;
+  padding: 15vw;
+  text-align: center;
+  font-weight: bold;
+}
+
+SearchBar{
+  background-color:#40798c ;
+  color: black;
+}
+
+Page{
+  background-color: #403d39;
+  color: #ffffff;
+}
