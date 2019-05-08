@@ -1,0 +1,96 @@
+
+.div_global{
+    flex-grow: 1;
+    display: flex;
+    padding: 0px;
+    height: 100vh;
+  flex-direction: column;
+  background-color: rgb(119, 86, 86);
+}
+
+
+.title{
+    font-size: 50px;
+}
+.head{
+    margin: 0 auto;
+    align-items: center; 
+    background: rgb(90, 60, 60);
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+
+    margin: 0px;
+}
+.menu{
+    flex-grow: 1;
+    display: flex;
+   
+    background: rgb(67, 230, 195);
+    height: 5%;
+}
+.div_button{
+    flex-grow: 1;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    height: 40px;
+    width: 30%;
+}
+.div_button1{
+  
+    flex-grow: 1;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    height: 40px;
+    width: 30%;
+    background:rgb(206, 127, 127);
+
+}
+.div_button1:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+}
+.div_button:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+}
+a{
+    text-decoration: none; 
+}
+.contenu{
+    
+    height: 80%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.div_gauche{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: rgb(119, 86, 86);
+    width: 25%;
+}
+.div_gauche p{
+    font-size: 20px;
+    align-content: center;
+}
+.div_droite{
+  font-size: 50px;
+    display: flex;
+    background:rgb(186, 202, 155);
+    flex-direction: column;
+    width: 75%;
+    
+}
+
+#robot{
+ 
+    height: 100px;
+    width: 100px;
+}

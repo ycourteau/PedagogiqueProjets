@@ -1,0 +1,90 @@
+<!DOCTYPE <!DOCTYPE html>
+<!-- Mohammed KOUTTI  date : Jeudi 13 décembre 2018 -->
+<html>   
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Examen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="./main.js"> </script>
+</head>
+<body>
+    <!-- div qui contient toute la page-->
+<div class="global"> 
+    <div class="head"> 
+ <!-- div qui contient le titre-->
+        <div class="title"><p>MOVING ROBOT</p></div> 
+    </div>
+ <!-- div qui contient la barre de navigation-->
+    <div class="menu"> 
+            <div  class="div_button1">  <a href="">Accueil</a></div>
+            <div  class="div_button">  <a href="">À propos</a></div>
+            <div  class="div_button">  <a href="">Contact</a></div>
+            <div  class="div_button">  <a href="">Qui somme-nous?</a></div>
+    </div>
+     <!-- div qui contient la parite inférieure contenant deux div à savoir div à gauche et div à droite-->
+    <div class="contenu"> 
+         <!-- div qui contient l'instruction à gauche-->
+        <div class="div_gauche">
+           <p> Ceci est un robot en mouvement avec les touches de clavier.
+               Il peut se déplacer en haut, en bas,à gauche et à droite.
+           </p>
+        </div>
+    <!-- div qui contient le robot à droite-->
+        <div class="div_droite" style="position: relative;">
+                <img id="robot" src="robot.jpg" width="25px" height="20px" style="position: absolute;">
+                <script>
+/*
+  * Déclaration de la variable 'x' et l'initialisation à '0';
+  * Déclaration de la variable 'y' et l'initialisation à '0'
+  * création et initialisation d'un nouvel objet'downkeys';
+  * assigner une référence à 'mavoiture'
+  */
+                    const downkeys=new Set();
+                    let x=0;
+                    let y=0;
+                    const fleche=document.getElementById('robot');
+                    document.addEventListener('keydown', event=>downkeys.add(event.key));
+                    document.addEventListener('keyup', event=>downkeys.delete(event.key));
+/*
+    * création de la fonction update() qui sert à aupdate la position de l'image;
+    * création de la fonction isDown() qui sert à déplacer l'image en haut, en bas,à gauche et à droite  en appuyant sur les différentes touches ;
+    * retour: la valeur d'y
+    * retour: la valeur d'x
+  */
+                    function update(){
+                        function isDown(key){return downkeys.has(key);}
+                        /* limiter le deplacement de l'image au width et height du div de l'arena */
+                       // document.getElementById("div_droite").clientWidth;
+                        const s=fleche.style;
+                        if(isDown('ArrowDown')) s.top=++y +'px';
+                        if(isDown('ArrowUp'))   s.top=--y +'px';
+                        if(isDown('ArrowLeft')) s.left=--x +'px';
+                        if(isDown('ArrowRight')) s.left=++x +'px';
+                        window.requestAnimationFrame(update);
+                         /* limiter le deplacement de l'image au width et height du div de l'arena */
+
+                        // chercher la largeur du parent "div_droite"
+                       var container=document.getElementById("div_droite").clientWidth;
+                       var  containerWidth=parseInt(getComputerStyle(container).width);
+                         // chercher la largeur de l'enfant "robot"
+                        var container_child=document.getElementById("robot").clientWidth;
+                        var containerWidth_child=parseInt(getComputerStyle(container_child).width);
+                      
+                     /*if(container==container_child+x){
+                          // (x +1)= container-container_child;
+
+                      }*/
+
+                    }
+                    window.requestAnimationFrame(update);
+                </script>
+    
+        </div >
+    </div>
+</div>
+
+</body>
+
+</html>

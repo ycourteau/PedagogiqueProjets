@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Exercice 4.1</title>
+        <meta http-equiv="Content-Type" content="text/html, charset=utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <script src="src/scripts.js"></script>
+    </head>
+
+    <div id="entete">
+        Salut voici l'exam
+    </div>
+
+    <div id="menuBande" class="flexRow">
+        <nav>Page 1</nav>
+        <nav>Page 2</nav>
+        <nav>Page 3</nav>
+    </div>
+
+    <div id="sectionCentrale" class="flexRow">
+        <div id="menuRobot" class="flexColumn">
+            <img src="medias/up.png" class="direction" onclick="goUp()">
+            <div class="flexRow" id="leftRight">
+                <img src="medias/left.png" class="direction" onclick="goLeft()">
+                <img src="medias/right.png" class="direction" onclick="goRight()">
+            </div>
+            <img src="medias/down.png" class="direction" onclick="goDown()">
+        </div>
+        <div id="arenaRobot">
+            <img src="medias/robot.png" id="robot">
+        </div>        
+    </div>
+
+    <div id="footer">
+            &#9400 Cedrick Guillet
+    </div>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- 2018-12-13  Kevin Teadale-Dubé-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css" />
+</head>
+
+<body>
+    <!-- Div qui contient tout le BODY -->
+    <div class="body_container">
+        <!-- Div qui contient le HEADER -->
+        <div class="header_container">
+            <h1 class="header_text">E-TRON!</h1>
+        </div>
+        <!-- Div qui contient les BOUTONS -->
+        <div class="button_container">
+            <nav>
+                <div class="button_single_box"><a href="experimentation_1.html" class="button" id="selected">Accueil</a></div>
+                <div class="button_single_box"><a href="a_propos.html" class="button">À Propos</a></div>
+                <div class="button_single_box"><a href="contact.html" class="button">Contacts</a></div>
+            </nav>
+        </div>
+        <!-- Div qui contient le CONTENU -->
+        <div class="content_container">
+            <div class="navigation_menu">
+                <p class="directive">Appuyez sur les flèches pour faire bouger le robot.</p>
+            </div>
+            <!-- Div qui contient le l'arène du robot -->
+            <div id="content">
+                <img id="robot" src="medias/robot.png">
+
+            </div>
+        </div>
+        <!-- Div qui contient le FOOTER -->
+        <div class="footer_container">
+            <footer>
+                <h2 class="footer_text">Merci de bien vouloir faire un don pour financer mes études en web, car ça fait
+                    pitié</h2>
+            </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script>
+    const keyspressed = new Set();
+    let x = 0;
+    let y = 0;
+    const robot = document.getElementById('robot');
+
+    /* Fonction qui fait bouger le robot */
+    function movement() {
+
+        /* Variable qui sert à délimiter les limites du div */
+        var height = (document.getElementById('content').clientHeight) - robot.clientHeight;
+        var width = (document.getElementById('content').clientWidth) - robot.clientWidth;
+        
+        document.addEventListener('keydown', event => keyspressed.add(event.key));
+        document.addEventListener('keyup', event => keyspressed.delete(event.key));
+
+        /* Fonctionne qui retourne TRUE lorsque la touche est enfoncé */
+        function isPressed(key) {
+            return keyspressed.has(key);
+        }
+        const s = robot.style;
+        if (isPressed('ArrowUp')) {
+            if (y > 0) {
+                s.top = --y + 'px'
+            }
+        };
+        if (isPressed('ArrowDown')) {
+            if (y < height)
+                s.top = ++y + 'px'
+
+        };
+
+        if (isPressed('ArrowRight')) {
+            if (x < width) {
+                s.left = ++x + 'px'
+            }
+        };
+
+        if (isPressed('ArrowLeft')) {
+            if (x > 0) {
+                s.left = --x + 'px'
+            }
+        };
+
+        window.requestAnimationFrame(movement);
+
+    }
+    movement();
+</script>

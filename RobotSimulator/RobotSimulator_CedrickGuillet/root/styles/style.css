@@ -1,0 +1,83 @@
+body{
+    margin: 0px;
+}
+
+nav:hover{
+    background-color: #404d28;
+}
+
+.flexColumn{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.direction{
+    background-color: #729F98;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 100%;
+}
+
+#entete{
+    background-color: #729F98;
+    color: #283018;
+    font-size: 5vw;
+    text-align: center;
+}
+
+#menuBande{
+    background-color: #283018;
+    color: #AA9A3A;
+    width:100%;
+} #menuBande > nav {
+    font-size:2vw;
+    width: 20vw;
+    text-align: center;
+}
+
+#sectionCentrale{
+    background-color: #AA9A3A;
+}
+
+#menuRobot{
+    background-color: #283018;
+    color: #AA9A3A;
+    justify-content: center;
+    align-content: center;
+    width: 20vw;
+}
+
+#leftRight{
+    justify-content: center;
+}
+
+#robotArena{
+    position: relative;
+}
+
+#robot{
+    height : 10vw;
+    width: 10vw;
+    position: absolute;
+}
+
+#footer{
+    background-color: #283018;
+    text-align: right;
+}
+
+/*
+gris : #F0ECEB
+bleu : #729F98
+brun foncé : #283018
+brun pâle : #AA9A3A
+*/
